@@ -20,7 +20,7 @@ function classNames(...classes: any) {
 }
 
 export default function Navbar({ }: Props) {
-  const [activeLink, setActiveLink] = useState("main");
+  const [activeLink, setActiveLink] = useState<any>("main");
 
   const navigation = [
     { name: 'Dashboard', href: '#main', current: activeLink === "main" ? true : false},
@@ -72,6 +72,7 @@ export default function Navbar({ }: Props) {
                     alt="Panat Logo"
                     width={10}
                     height={15}
+                    priority={true}
                     className='h-16 w-auto'
                   />
                 </div>

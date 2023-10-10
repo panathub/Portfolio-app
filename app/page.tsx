@@ -7,12 +7,18 @@ import About from '@/components/About'
 import Skill from '@/components/Skill'
 import Contact from '@/components/Contact'
 import ScorllToTop from '@/components/ScorllToTop'
-import Aos from 'aos'
+import AOS from 'aos'
 import 'aos/dist/aos.css';
+import { useEffect } from 'react'
 
 export default function Home({ }) {
-  Aos.init();
 
+  useEffect(() => {
+    AOS.init({
+      once: false
+    })
+  }, [])
+  
   return (
     <>
       <ScorllToTop />
