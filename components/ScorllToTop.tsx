@@ -32,17 +32,17 @@ export default function ScorllToTop() {
   }
 
   return (
-    <div className="fixed bottom-2 right-2">
-    <button
-      type="button"
-      onClick={scrollToTop}
-      className={classNames(
-        isVisible ? 'opacity-100' : 'opacity-0',
-        'bg-gray-900 hover:bg-white inline-flex items-center rounded-full p-3 text-white shadow-sm focus:outline-none focus:ring-0 hover:text-gray-900 transition-all duration-300',
-      )}
-    >
-      <ArrowUpCircleIcon className="h-6 w-6" aria-hidden="true" />
-    </button>
-  </div>
+    <div className="fixed bottom-2 right-2 z-50">
+      <button
+        type="button"
+        onClick={scrollToTop}
+        className={classNames(
+          isVisible ? 'opacity-100' : 'opacity-0',
+          'bg-gray-900 hover:bg-white inline-flex items-center rounded-full p-3 text-white shadow-sm focus:outline-none focus:ring-0 hover:text-gray-900 transition-all duration-300',
+        )}
+      >
+        <ArrowUpCircleIcon className="h-6 w-6" aria-hidden="true" />
+      </button>
+    </div>
   );
 }

@@ -48,7 +48,7 @@ export default function Navbar({ }: Props) {
   }, []);
   
   return (
-    <Disclosure as="nav" className="bg-white top-0 w-full shadow-md z-50 sticky" >
+    <Disclosure as="nav" className="bg-white top-0 w-full shadow-md z-50 fixed" >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -65,7 +65,7 @@ export default function Navbar({ }: Props) {
                   )}
                 </Disclosure.Button>
               </div>
-              <nav className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Image
                     src="/logo.svg"
@@ -93,7 +93,7 @@ export default function Navbar({ }: Props) {
                     ))}
                   </div>
                 </div>
-              </nav>
+              </div>
             </div>
           </div>
 
