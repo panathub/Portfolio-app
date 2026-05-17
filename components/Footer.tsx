@@ -1,12 +1,11 @@
 import Image from "next/image";
-import React from "react";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="p-4 bg-transparent md:p-8 lg:pt-28">
-      <div className="mx-auto max-w-screen-xl text-center">
-        <p className="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
+      <div className="mx-auto text-center max-w-7xl">
+        <p className="flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white">
           Development By PanatHub
         </p>
         <div className="flex gap-2 justify-center [&_img]:w-6 [&_img]:py-3">

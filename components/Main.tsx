@@ -1,4 +1,3 @@
-import React from "react";
 import Typewriter from "typewriter-effect";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
@@ -33,7 +32,7 @@ export default function Main() {
             <ArrowRightIcon className="w-3 h-3 ml-2" aria-hidden="true" />
           </a>
         </div>
-        <div className="w-[90%] max-w-[600px] mx-auto mt-10 lg:w-full lg:max-w-none lg:mt-0 lg:col-span-5">
+        <div className="w-[90%] max-w-150 mx-auto mt-10 lg:w-full lg:max-w-none lg:mt-0 lg:col-span-5">
           <Image
             src="/Saly.webp"
             width={1000}

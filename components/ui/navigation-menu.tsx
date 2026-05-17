@@ -1,7 +1,12 @@
 "use client";
 
 import * as React from "react";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useMotionValueEvent,
+  type Variants,
+} from "framer-motion";
 import { Navigation, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -14,7 +19,7 @@ const navItems = [
 
 const EXPAND_SCROLL_THRESHOLD = 80;
 
-const containerVariants = {
+const containerVariants: Variants = {
   expanded: {
     y: 0,
     opacity: 1,
@@ -44,7 +49,7 @@ const containerVariants = {
   },
 };
 
-const logoVariants = {
+const logoVariants: Variants = {
   expanded: {
     opacity: 1,
     x: 0,
@@ -59,7 +64,7 @@ const logoVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   expanded: {
     opacity: 1,
     x: 0,
@@ -69,7 +74,7 @@ const itemVariants = {
   collapsed: { opacity: 0, x: -20, scale: 0.95, transition: { duration: 0.2 } },
 };
 
-const collapsedIconVariants = {
+const collapsedIconVariants: Variants = {
   expanded: { opacity: 0, scale: 0.8, transition: { duration: 0.2 } },
   collapsed: {
     opacity: 1,
@@ -155,7 +160,7 @@ export function AnimatedNavFramer() {
       >
         <motion.div
           variants={logoVariants}
-          className="flex items-center flex-shrink-0 pl-4 pr-2 font-semibold"
+          className="flex items-center pl-4 pr-2 font-semibold shrink-0"
         >
           <Navigation className="w-5 h-5" />
         </motion.div>

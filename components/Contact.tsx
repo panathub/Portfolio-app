@@ -21,7 +21,7 @@ export default function Contact() {
   return (
     <section id="contact" className="bg-transparent">
       <div
-        className="max-w-screen-md px-4 py-8 mx-auto lg:py-32"
+        className="max-w-3xl px-4 py-8 mx-auto lg:py-32"
         data-aos="flip-up"
         data-aos-duration="1200"
       >
@@ -45,7 +45,7 @@ export default function Contact() {
             />
             <label
               htmlFor="floating_email"
-              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="absolute text-sm text-gray-500 duration-300 origin-left transform scale-75 -translate-y-6 peer-focus:font-medium dark:text-gray-400 top-3 -z-10 peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Email
             </label>
@@ -63,7 +63,7 @@ export default function Contact() {
             />
             <label
               htmlFor="floating_subject"
-              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="absolute text-sm text-gray-500 duration-300 origin-left transform scale-75 -translate-y-6 peer-focus:font-medium dark:text-gray-400 top-3 -z-10 peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Subject
             </label>
@@ -81,7 +81,7 @@ export default function Contact() {
             />
             <label
               htmlFor="floating_message"
-              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="absolute text-sm text-gray-500 duration-300 origin-left transform scale-75 -translate-y-6 peer-focus:font-medium dark:text-gray-400 top-3 -z-10 peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Message
             </label>
